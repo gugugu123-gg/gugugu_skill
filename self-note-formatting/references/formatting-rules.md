@@ -2,6 +2,8 @@
 
 Use this file as the detailed rulebook for `$self-note-formatting`.
 
+For Chinese prose, follow the same standard as the vault's Chinese copywriting guide: Chinese-English spacing, Chinese-number spacing, no space between numbers and units, full-width Chinese punctuation, half-width digits, correct proper-noun casing, no meaningless repeated punctuation, and mandatory corner quotes.
+
 Core principle: make the smallest edit set that fixes formatting while preserving meaning, tone, and note structure.
 
 ## 1. Protected content
@@ -18,6 +20,11 @@ Preserve exactly unless the user explicitly asks for broader edits:
 - callouts such as `> [!note]`
 - block quotes
 - frontmatter keys and values that already exist
+
+Quote exception:
+- In normal Chinese prose, always normalize quotation marks to corner quotes even during minimal formatting.
+- Use `「」` for outer quotes and `『』` for nested quotes.
+- Do not change quote characters inside code spans, code fences, URLs, frontmatter values, or exact quoted/source-preservation blocks when the user explicitly asks for exact source retention.
 
 Do not:
 - rename headings to improve style
@@ -39,21 +46,25 @@ Add spaces in these common cases:
 - Chinese + English: `在 LeanCloud 上开发`
 - Chinese + number: `这是 2026 年的计划`
 - number + Chinese unit word: `3 个问题`, `2 次迭代`
-- number + Latin unit: `10 Mbps`, `24 GB`
 - Chinese + emphasis or link when readability needs separation
 
 Do not add spaces in these cases:
-- percentage and degree symbols: `15%`, `28℃`, `90°`
+- number + Latin unit: `10Gbps`, `10TB`, `24GB`
+- percentage and degree symbols: `15%`, `28℃`, `90°`, `233°`
+- around full-width punctuation: `买了一部 iPhone，好开心`
 - inside inline tags
 - inside wiki links
 - inside code spans, code fences, URLs, or frontmatter values unless the value itself is being normalized by user request
 
 ## 4. Punctuation normalization
 
-In Chinese prose, prefer Chinese punctuation when the sentence is primarily Chinese:
-- `，` `。` `：` `；` `？` `！`
-- use `「」` only if the note already uses that style consistently; otherwise preserve the note's established quote style
+In Chinese prose, use Chinese full-width punctuation when the sentence is primarily Chinese:
+- `，` `。` `：` `；` `？` `！` `（` `）` `《` `》`
+- use corner quotes as mandatory style: outer `「」`, nested `『』`
+- convert straight quotes, English curly quotes, and Chinese curved quotes such as `"` `'` `“”` `‘’` to corner quotes in normal Chinese prose
 - use `……` instead of repeated `...` only when it is clearly narrative prose rather than copied code or raw text
+- reduce meaningless repeated punctuation to a single mark, such as `！！` -> `！` and `？？` -> `？`, unless repetition is clearly intentional in chat, dialogue, emotional expression, or literary voice
+- use half-width punctuation inside complete English sentences or special English titles/names
 
 Do not normalize punctuation inside:
 - code
@@ -61,6 +72,13 @@ Do not normalize punctuation inside:
 - copied commands
 - URLs
 - literal titles that intentionally mix punctuation styles
+
+## 4.1 Full-width, half-width, and proper nouns
+
+- Use half-width digits: `1000`, `2026`, `3.5`.
+- Use official or common proper-noun casing when the correction is certain: `GitHub`, `JavaScript`, `ChatGPT`, `iPhone`, `Microsoft`.
+- Do not create unnatural abbreviations or guess uncertain brand casing.
+- If a complete English sentence appears inside Chinese prose, keep English punctuation inside that English sentence.
 
 ## 5. Headings and lists
 

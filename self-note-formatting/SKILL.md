@@ -1,6 +1,6 @@
 ---
 name: self-note-formatting
-description: "Use this skill to format and lightly normalize explicitly specified notes in the self vault without changing meaning, tone, or note intent. Trigger on requests such as '排版这个笔记', '整理这个 md', '规范这个 note', or '格式化 self 里的笔记', especially for files in lite/, insight/, drafts & doing/, and experience/03_Projects/."
+description: "Use this skill to format and lightly normalize explicitly specified notes in the self vault without changing meaning, tone, or note intent. Follow the vault's Chinese copywriting layout rules, including mandatory corner quotes 「」/『』 in Chinese prose. Trigger on requests such as '排版这个笔记', '整理这个 md', '规范这个 note', or '格式化 self 里的笔记', especially for files in lite/, insight/, drafts & doing/, and experience/03_Projects/."
 ---
 
 # Self Note Formatting
@@ -16,7 +16,7 @@ Use this skill when the user wants formatting, cleanup, or light normalization f
 Typical triggers:
 - a note needs better spacing, paragraph breaks, or heading/list separation
 - Chinese and English, Chinese and numbers, or numbers and units need spacing cleanup
-- punctuation is inconsistent in a Chinese note
+- punctuation is inconsistent in a Chinese note, especially quote style
 - Markdown structure is messy but the content should not be rewritten
 - a note is missing frontmatter and will be saved again during formatting
 
@@ -38,6 +38,7 @@ Use `$self-lite-curation` or `$self-deep-curation` for content restructuring. Us
 - Preserve user meaning, tone, wording choices, and note intent.
 - Preserve inline tags such as `#标签`.
 - Preserve wiki links `[[...]]`, Markdown links, callouts, code fences, tables, block quotes, and task lists.
+- In Chinese prose, normalize quotation marks to corner quotes: outer `「」`, nested `『』`.
 - Do not auto-bold links.
 - Do not add commentary, interpretation, or new sections unless they are needed for minimal structural hygiene.
 - Do not rename files, move files, or change storage paths.
@@ -72,8 +73,8 @@ Refuse:
    - heading, list, quote, callout, and code-block spacing
    - Chinese and English spacing
    - Chinese and number spacing
-   - number and unit spacing where appropriate
-   - punctuation normalization in Chinese context
+   - number and unit spacing according to the vault Chinese copywriting rules
+   - punctuation normalization in Chinese context, including mandatory corner quotes
 6. Preserve frontmatter if it already exists.
 7. If frontmatter is missing and the note will be saved, add minimal frontmatter with only `created: YYYY-MM-DD`.
 8. If frontmatter exists but contains fields other than `created`, reduce it to the single `created` field and move any meaningful metadata into body text only when the current task explicitly requires preserving it.

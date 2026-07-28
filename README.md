@@ -12,7 +12,7 @@
 | [`self-note-curation`](self-note-curation/) | 把原始材料整理成可长期保存的结构化笔记 | 从聊天、草稿、转写、原文里沉淀一篇笔记，保存到 `项目/不知道怎么分类就随便放了/` |
 | [`self-daily-record-curation`](self-daily-record-curation/) | 把一天的零散材料整理成结构化日记录 | 把日常流水、聊天、语音碎片整理成 `今日状态 / 经历 / 想法 / 灵感与线索 / 推理或思路 / 证据与来源` |
 | [`self-bidirectional-linking`](self-bidirectional-linking/) | 为笔记添加有理由的来源链接、语义双链和日记录链接 | 新笔记保存后，把它和 vault 内强相关笔记连接起来；处理从 `raw/` 派生出的来源追踪 |
-| [`self-note-formatting`](self-note-formatting/) | 对指定笔记做最小化 Markdown 和中文排版规范化 | 修空行、标题/list 间距、中英数字空格、中文标点；不改意思、不重写、不加双链 |
+| [`self-note-formatting`](self-note-formatting/) | 对指定笔记做最小化 Markdown 和中文排版规范化 | 修空行、标题/list 间距、中英数字空格、直角引号和中文标点；不改意思、不重写、不加双链 |
 | [`self-profile-distillation`](self-profile-distillation/) | 从一段时间的笔记中提炼稳定自我模型 | 按周、月或项目阶段更新 `self-profile/`，沉淀认知哲学、思维风格、语言风格和行为特征 |
 
 ## 核心使用场景
@@ -100,7 +100,7 @@ experience/01_Records/YYYY-MM-DD.md
 
 - 段落、标题、列表、引用、代码块、表格周围的空行
 - 中文与英文、中文与数字、数字与单位的常见空格
-- 中文语境下的标点规范
+- 中文语境下的标点规范，强制使用直角引号 `「」` / `『』`
 - 缺失 frontmatter 时补 `created: YYYY-MM-DD`
 
 它明确不做：
