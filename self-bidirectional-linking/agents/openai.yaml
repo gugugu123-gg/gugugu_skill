@@ -1,0 +1,4 @@
+interface:
+  display_name: "Bidirectional Linking"
+  short_description: "Find strong related notes and add reciprocal wiki links with reasons."
+  default_prompt: "Use $self-bidirectional-linking to connect this self-vault note to strong related notes. For daily records, search only recently created notes instead of scanning the whole vault."

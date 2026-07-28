@@ -1,0 +1,4 @@
+interface:
+  display_name: "Note Curation"
+  short_description: "Organize source material into a durable self-vault note."
+  default_prompt: "Use $self-note-curation to organize this source into a durable note for 项目/不知道怎么分类就随便放了/."

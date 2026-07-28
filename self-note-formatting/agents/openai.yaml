@@ -1,0 +1,4 @@
+interface:
+  display_name: "Self Note Formatting"
+  short_description: "Format and lightly normalize self-vault notes"
+  default_prompt: "Use $self-note-formatting to format this self-vault note with minimal edits."

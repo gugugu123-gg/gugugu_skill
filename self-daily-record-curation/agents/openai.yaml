@@ -1,0 +1,4 @@
+interface:
+  display_name: "Self Daily Record Curation"
+  short_description: "Turn messy daily material into a structured day record, then link recent related notes."
+  default_prompt: "Use $self-daily-record-curation to organize the provided daily material into a structured record under experience/01_Records/, then run self-bidirectional-linking against recent related notes."

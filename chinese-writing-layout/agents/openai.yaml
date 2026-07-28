@@ -1,0 +1,7 @@
+interface:
+  display_name: "中文口述排版"
+  short_description: "专门处理长语音稿的克制分段与轻结构排版"
+  default_prompt: "Use $chinese-writing-layout to clean up this long Chinese voice draft by only adjusting paragraphing, source-implied list structure, and necessary punctuation."
+
+policy:
+  allow_implicit_invocation: true

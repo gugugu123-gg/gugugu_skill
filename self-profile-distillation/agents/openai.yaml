@@ -1,0 +1,4 @@
+interface:
+  display_name: "Self Profile Distillation"
+  short_description: "Distill stable self-model patterns from the self vault."
+  default_prompt: "Use $self-profile-distillation to distill stable self-model patterns from a chosen time range in the self vault into the self-profile layer."
