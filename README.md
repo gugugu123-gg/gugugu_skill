@@ -1,3 +1,21 @@
+# PRP (Personal Resource Planning)
+
+PRP (Personal Resource Planning) is a personal resource management system inspired by enterprise financial management practices, including balance sheets, cash flow statements, double-entry accounting, and structured resource planning.
+
+## Author
+
+Zephyr Zhao
+
+## Copyright
+
+© 2026 Zephyr Zhao
+
+## License
+
+MIT License
+
+## Original README
+
 # gugugu_skill
 
 这是我自用的一组 Codex / OpenAI skill 和提示词 / 协议文档，主要围绕中文写作排版、Obsidian/self vault 笔记整理、日记录沉淀、双向链接维护、长期自我模型更新，以及视频讲义整理、产品 / 视觉逆向工程。
